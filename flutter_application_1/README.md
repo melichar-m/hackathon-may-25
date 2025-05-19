@@ -1,16 +1,15 @@
-# flutter_application_1
+# Hackathon mockup 5/15/2025 
 
-A new Flutter project.
+Bus app gathering more routing information to make phoenix's bus routes more efficient
 
-## Getting Started
+This project won venture cafe's hackathon in may 2025 sponsored by the city of phoenix
+development exclusively by michael melichar
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ideas by the rest of the team to make it happen
+the team:
+michael melichar
+malcolm marzett
+christie crisman
+michael german
+brett debari
+carlin humphries
