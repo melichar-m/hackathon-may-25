@@ -17,7 +17,7 @@ class WebAnalyticsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildSummaryCard(),
+            _buildSummaryCard(context),
             const SizedBox(height: 20),
             _buildRouteOptimizationSection(),
             const SizedBox(height: 20),
@@ -30,7 +30,7 @@ class WebAnalyticsScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildSummaryCard() {
+  Widget _buildSummaryCard(BuildContext context) {
     return Card(
       elevation: 4,
       child: Padding(
@@ -39,7 +39,7 @@ class WebAnalyticsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'SUICA App Usage Insights',
+              'App Usage Insights',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -49,9 +49,9 @@ class WebAnalyticsScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _buildStatItem('Active Users', '12,458'),
-                _buildStatItem('Avg. Trips/User', '4.2'),
-                _buildStatItem('Digital Card Usage', '68%'),
+                _buildStatItem(context, 'Active Users', '12,458'),
+                _buildStatItem(context, 'Avg. Trips/User', '4.2'),
+                _buildStatItem(context, 'Digital Card Usage', '68%'),
               ],
             ),
           ],
@@ -174,18 +174,18 @@ class WebAnalyticsScreen extends StatelessWidget {
             const SizedBox(height: 20),
             _buildFeedbackItem(
               'Payment Preferences',
-              '78% of SUICA users prefer digital card over cash',
+              '78% of users prefer digital over cash',
               'Based on 8,500+ transactions',
             ),
             _buildFeedbackItem(
               'Peak Usage Times',
               'Highest digital card usage: 7:30-8:30 AM',
-              '45% of morning commuters use SUICA',
+              '45% of morning commuters use digital card',
             ),
             _buildFeedbackItem(
               'Route Popularity',
               'Most popular route: Downtown Express (Route 7)',
-              '32% of all SUICA transactions',
+              '32% of all digital card transactions',
             ),
           ],
         ),
@@ -250,7 +250,7 @@ class WebAnalyticsScreen extends StatelessWidget {
             ),
             _buildPatternItem(
               'Digital Adoption',
-              'Weekly growth in SUICA users: 12%',
+              'Weekly growth in digital card users: 12%',
               'Most new users: 25-34 age group',
             ),
             _buildPatternItem(

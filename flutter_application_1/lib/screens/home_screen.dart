@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Valley Metro SUICA'),
+        title: const Text('Valley Metro'),
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Valley Metro SUICA',
+                'Valley Metro Card',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,

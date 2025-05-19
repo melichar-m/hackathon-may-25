@@ -16,7 +16,7 @@ class ValleyMetroSuicaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Valley Metro SUICA',
+      title: 'Valley Metro',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         useMaterial3: true,
